@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tosinolugbenga.tipcalculator.MainActivity">
+
+<android.support.design.widget.TextInputLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+
+         <EditText
+         android:id="@+id/total_amount"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/amount_description"
+         android:inputType="numberDecimal"
+        />
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <EditText
+        android:id="@+id/tip_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount_description"
+        android:inputType="numberDecimal"
+       />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id ="@+id/snackbarcontainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+    >
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Done"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
